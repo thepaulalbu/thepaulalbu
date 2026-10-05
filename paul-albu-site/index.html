@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Paul Albu — Film Director, Writer, Producer</title>
+<meta name="description" content="Paul Albu, film director, writer and producer based in Bucharest. Showreel, films and CV. Open to runner, PA and directing-department roles.">
+<meta property="og:title" content="Paul Albu — Film Director, Writer, Producer">
+<meta property="og:description" content="Showreel, films and CV. Bucharest.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#060607">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23060607'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%237C9BD6' font-family='Georgia'%3EPA%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#060607;--ink:#ece9e2;--mute:#a1a1aa;--navy:#7c9bd6;--line:#23232a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+a{color:var(--navy)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:64px 0 36px}
+h1{font:400 clamp(44px,10vw,92px)/1 Georgia,"Iowan Old Style","Times New Roman",serif;letter-spacing:-.02em;margin:0 0 14px}
+.role{color:var(--mute);margin:0 0 6px}
+.open{margin:0 0 26px;max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border:1px solid var(--navy);border-radius:999px;color:var(--ink);text-decoration:none;font-weight:600}
+.btn.main{background:var(--navy);color:#060607}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font:400 28px/1.2 Georgia,"Iowan Old Style",serif;margin:0 0 18px}
+.player{position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
+.player video,.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.fs{position:absolute;top:10px;right:10px;z-index:3;min-width:48px;min-height:48px;padding:0 14px;border:0;border-radius:8px;background:rgba(6,6,7,.78);color:var(--ink);font:600 15px/1 inherit;cursor:pointer}
+.big{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);border:0;cursor:pointer;color:var(--ink)}
+.big span{width:84px;height:84px;border-radius:50%;background:rgba(6,6,7,.8);border:2px solid var(--ink);display:flex;align-items:center;justify-content:center}
+.big svg{width:34px;height:34px;margin-left:5px}
+.note{color:var(--mute);font-size:15px;margin:10px 0 0}
+.film{display:grid;gap:22px}
+@media(min-width:720px){.film{grid-template-columns:260px 1fr;align-items:start}}
+.poster{aspect-ratio:2/3;border:1px solid var(--line);border-radius:10px;background:linear-gradient(160deg,#0f1a33,#060607 70%);display:flex;align-items:flex-end;padding:18px}
+.poster b{font:400 30px/1 Georgia,serif}
+.film h3{font:400 24px/1.2 Georgia,serif;margin:0 0 8px}
+.film p{margin:0 0 10px;color:var(--mute)}
+dl{margin:14px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 18px}
+dt{color:var(--mute)}dd{margin:0}
+.contact a.big-link{display:block;font-size:20px;padding:10px 0;min-height:48px}
+footer{padding:30px 0 40px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Paul Albu</h1>
+  <p class="role">Film director, writer, producer. Bucharest.</p>
+  <p class="open">Open to runner, PA and directing-department roles in Bucharest.</p>
+  <div class="btns">
+    <a class="btn main" href="#reel">Watch the reel</a>
+    <a class="btn" href="Paul_Albu_CV.pdf" download>Download CV</a>
+  </div>
+</header>
+
+<section id="reel">
+  <h2>Showreel</h2>
+  <div class="player" id="player"></div>
+  <p class="note" id="reelnote"></p>
+</section>
+
+<section id="films">
+  <h2>Films</h2>
+  <div class="film">
+    <div class="poster" role="img" aria-label="Bleumarin, poster placeholder"><b>Bleumarin</b></div>
+    <div>
+      <h3>Bleumarin</h3>
+      <p>Short film, 15 minutes, 2026. Currently in post-production.</p>
+      <dl>
+        <dt>Written by</dt><dd>Paul Albu</dd>
+        <dt>Directed by</dt><dd>Paul Albu</dd>
+        <dt>Produced by</dt><dd>Paul Albu</dd>
+      </dl>
+      <p id="teaser" hidden style="margin-top:14px"><a href="#" id="teaserlink">Watch the teaser</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <a class="big-link" href="tel:+40771484204">0771 484 204</a>
+  <a class="big-link" href="mailto:paulalbu11@yahoo.com">paulalbu11@yahoo.com</a>
+  <a class="big-link" href="https://instagram.com/the_paul_albu" rel="noopener">@the_paul_albu on Instagram</a>
+</section>
+<footer>© 2026 Paul Albu</footer>
+</div>
+
+<script>
+/* ===== EDIT THESE ===== */
+var CONFIG = {
+  reelFile: "reel.mp4",   // video file uploaded next to index.html (H.264 MP4, under ~100 MB)
+  reelEmbed: "",          // OR paste a Vimeo/YouTube EMBED URL here, e.g. "https://player.vimeo.com/video/123456789"
+  poster: "",             // optional poster image, e.g. "poster.jpg"
+  teaserUrl: ""           // optional link to the Bleumarin teaser
+};
+/* ====================== */
+(function(){
+  var box=document.getElementById('player'), note=document.getElementById('reelnote');
+  var PLAY='<svg viewBox="0 0 24 24" fill="#ece9e2" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg>';
+  var media;
+  if(CONFIG.reelEmbed){
+    media=document.createElement('iframe');
+    media.src=CONFIG.reelEmbed;
+    media.title='Paul Albu showreel';
+    media.allow='autoplay; fullscreen; picture-in-picture';
+    media.setAttribute('allowfullscreen','');
+    media.loading='lazy';
+    box.appendChild(media);
+  }else{
+    media=document.createElement('video');
+    media.controls=true; media.playsInline=true; media.setAttribute('playsinline','');
+    media.setAttribute('webkit-playsinline',''); media.preload='metadata';
+    if(CONFIG.poster) media.poster=CONFIG.poster;
+    media.src=CONFIG.reelFile;
+    media.setAttribute('aria-label','Paul Albu showreel');
+    box.appendChild(media);
+    var big=document.createElement('button');
+    big.className='big'; big.type='button'; big.setAttribute('aria-label','Play reel');
+    big.innerHTML='<span>'+PLAY+'</span>';
+    big.onclick=function(){media.play();};
+    box.appendChild(big);
+    media.addEventListener('play',function(){big.hidden=true;});
+    media.addEventListener('ended',function(){big.hidden=false;});
+    media.addEventListener('error',function(){
+      big.hidden=true;
+      note.textContent='The reel could not load. Check that '+CONFIG.reelFile+' is uploaded next to index.html.';
+    });
+  }
+  var fs=document.createElement('button');
+  fs.className='fs'; fs.type='button'; fs.textContent='Full screen';
+  fs.setAttribute('aria-label','Full screen');
+  fs.onclick=function(){
+    try{
+      if(media.tagName==='VIDEO' && media.webkitEnterFullscreen && !media.requestFullscreen){ media.webkitEnterFullscreen(); return; }
+      var t=(media.tagName==='VIDEO')?media:media;
+      var r=t.requestFullscreen||t.webkitRequestFullscreen;
+      if(r){ var p=r.call(t); if(p&&p.then){p.then(function(){
+        if(screen.orientation&&screen.orientation.lock){screen.orientation.lock('landscape').catch(function(){});}
+      }).catch(function(){});} }
+    }catch(e){}
+  };
+  box.appendChild(fs);
+  if(CONFIG.teaserUrl){
+    document.getElementById('teaser').hidden=false;
+    document.getElementById('teaserlink').href=CONFIG.teaserUrl;
+  }
+})();
+</script>
+</body>
+</html>
